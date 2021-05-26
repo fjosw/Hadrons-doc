@@ -196,11 +196,8 @@ $$C(t)=\sum_{\mathbf{x}}\mathrm{tr}[S(t,\mathbf{x})\gamma_{\mu}] \, .$$
 ### Parameters
 | Parameter   | Type   |   Description                       |
 |-------------|----------------|-----------------------------|
-| `q1` | `std::string` | input propagator 1 (must be sinked already) |
-| `q2` | `std::string` | input propagator 2 |
-| `q3` | `std::string` | input propagator 3 |
-| `gamma` | `std::string` | list of gamma matrices|
-| `tSnk` | `int` | sink time $x_f$|
+| `q_loop` | `std::string` | input loop propagator |
+| `gamma` | `Gamma::Algebra` | gamma matrix|
 | `output` | `std::string` | Specify the output location of the correlator that is generated.|
 
 ### Dependencies
@@ -234,9 +231,13 @@ The gamma matrices can be a list, seperated by spaces. There is also the option 
 ### Parameters
 | Parameter   | Type   |   Description                       |
 |-------------|----------------|-----------------------------|
-| `q_loop` | `std::string` | input loop propagator |
-| `gamma` | `Gamma::Algebra` | gamma matrix|
+| `q1` | `std::string` | input propagator 1 (must be sinked already) |
+| `q2` | `std::string` | input propagator 2 |
+| `q3` | `std::string` | input propagator 3 |
+| `gamma` | `std::string` | list of gamma matrices|
+| `tSnk` | `int` | sink time $x_f$|
 | `output` | `std::string` | Specify the output location of the correlator that is generated.|
+
 
 ### Dependencies
 
